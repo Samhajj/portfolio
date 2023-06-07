@@ -13,6 +13,22 @@ const mobileMenu = document.querySelector(".mobile-menu-overlay");
 const clearMenu = document.querySelector(".fa-times");
 let [a, ...others] = [...navItems];
 
+// mobile nav items
+const navItemMobile1 = document.querySelector(".home-mobile");
+const navItemMobile2 = document.querySelector(".about-mobile");
+const navItemMobile3 = document.querySelector(".work-mobile");
+const navItemMobile4 = document.querySelector(".blog-mobile");
+const navItemMobile5 = document.querySelector(".testimonials-mobile");
+const navItemMobile6 = document.querySelector(".contact-mobile");
+const mobileNavItems = [
+  navItemMobile1,
+  navItemMobile2,
+  navItemMobile3,
+  navItemMobile4,
+  navItemMobile5,
+  navItemMobile6,
+];
+
 // let counter = 0;
 // for (let i = 0; i < navItems.length; i++) {
 //   navItems[i].addEventListener("click", function () {
@@ -20,6 +36,7 @@ let [a, ...others] = [...navItems];
 //     navItems[i].classList.remove("active");
 //   });
 // }
+
 let menuCounter = 0;
 mobileMenuToggle.addEventListener("click", function () {
   if (menuCounter === 0) {
@@ -34,6 +51,12 @@ mobileMenuToggle.addEventListener("click", function () {
 clearMenu.addEventListener("click", function () {
   mobileMenu.classList.remove("revealed");
 });
+
+for (let i = 0; i < mobileNavItems.length; i++) {
+  mobileNavItems[i].addEventListener("click", function () {
+    mobileMenu.classList.remove("revealed");
+  });
+}
 
 const menuHoverFunction = function () {
   a.addEventListener("mouseenter", function () {
