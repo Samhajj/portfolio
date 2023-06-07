@@ -6,16 +6,16 @@
 
   #hero-section {
     width: 100%;
-    height: fit-content;
+    height: 100vh !important;
     background: black;
     color: white;
-    overflow: hidden;
+    overflow: scroll;
     /* display: grid;
     justify-content: center;
     align-items: center; */
   }
   .container {
-    padding: 1em 1em 1em;
+    padding: 1.5em 1em 1em;
     display: grid;
     grid-template-columns: 100% !important;
     gap: 0em;
@@ -38,7 +38,7 @@
 
   .logo h1 {
     font-family: "Rubik Puddles", cursive;
-    font-size: 3em;
+    font-size: 3.5em;
     font-weight: bold;
   }
 
@@ -126,7 +126,7 @@
   }
 
   .mobile-menu-overlay ul li a {
-    font-size: 25px;
+    font-size: 20px;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -151,7 +151,7 @@
   .main {
     width: 100%;
     height: auto;
-    padding-top: 1.5em;
+    padding-top: 2em;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
   }
