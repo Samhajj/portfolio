@@ -1,0 +1,226 @@
+@media (max-width: 1000px) {
+  #hero-section {
+    width: 100%;
+    height: fit-content;
+    background: black;
+    color: white;
+    overflow: hidden;
+    /* display: grid;
+    justify-content: center;
+    align-items: center; */
+  }
+  .container {
+    padding: 4em 1em;
+    display: grid;
+    grid-template-columns: 10% 90% !important;
+    gap: 3em;
+  }
+
+  /* Menu styling */
+  .dynamic-side-bar-menu {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(2, fit-content) !important;
+    row-gap: 0em;
+  }
+
+  .logo a {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+  }
+
+  .logo h1 {
+    font-family: "Rubik Puddles", cursive;
+    font-size: 5em;
+    font-weight: bold;
+  }
+
+  .dynamic-side-bar-menu nav ul {
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 1em;
+    list-style: none;
+  }
+
+  .dynamic-side-bar-menu nav a {
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 3px 9px;
+    transition: 500ms ease-in-out;
+  }
+
+  .active {
+    border-radius: 5px;
+    background: rgb(44, 42, 42);
+  }
+
+  .hover {
+    color: #808080;
+    transition: 500ms ease-in-out;
+  }
+
+  .mobile-menu-toggle-bar {
+    display: none;
+  }
+
+  .mobile-menu-overlay {
+    display: none;
+  }
+
+  .main {
+    width: 100%;
+    height: auto;
+    padding-top: 0.5em;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  .name {
+    color: #909090;
+    font-family: "Rubik", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    grid-column: 1/-1;
+  }
+
+  .job-description {
+    width: 100%;
+    margin-top: 5px;
+    font-family: "Rubik", sans-serif;
+    color: white;
+    grid-column: 1/-1;
+  }
+
+  .job-description p {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 500;
+  }
+
+  .job-text-message {
+    grid-column: 1/6;
+    width: 80%;
+    padding: 10px 15px;
+    background: rgba(29, 28, 28, 0.5);
+    border-radius: 5px;
+    display: grid;
+    justify-items: center;
+    align-content: center;
+    font-family: "Poppins", sans-serif;
+    letter-spacing: 0px;
+    line-height: 1.2;
+    margin-top: 20px;
+  }
+
+  .job-text-message p {
+    font-size: 16px;
+  }
+
+  .contact-buttons {
+    margin-top: 20px;
+    grid-column: 6/-1;
+    display: grid;
+    grid-template-columns: repeat(2, fit-content);
+    column-gap: 0px;
+  }
+
+  .contact-buttons p {
+    height: fit-content;
+    grid-column: 1/-1;
+    color: #808080;
+    font-size: 14px;
+    font-family: "Raleway", sans-serif;
+    padding: 0;
+    margin: 0;
+  }
+
+  .fa-arrow-right {
+    transform: rotate(-23deg);
+  }
+
+  .contact-buttons a {
+    width: 100%;
+    height: fit-content;
+    color: white;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+    transition: 200ms ease-in-out;
+  }
+
+  .contact-buttons a:hover {
+    width: 100%;
+    color: #ffffffe7;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+  }
+
+  .contact-buttons .phone {
+    grid-column: 1/2;
+  }
+
+  .contact-buttons .mail {
+    grid-column: 2/-1;
+  }
+
+  .previous-works {
+    grid-column: 1/-1;
+    margin-top: 2.5em;
+    width: 75%;
+    height: 70px;
+    padding: 20px 20px 70px;
+    background: rgba(29, 28, 28, 0.5);
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    margin-bottom: 2em;
+  }
+
+  .previous-works p {
+    font-size: 17px;
+    font-family: "Poppins", sans-serif;
+    color: #808080;
+    margin: 5px 0 10px;
+  }
+
+  .projects {
+    /* display: grid; */
+    grid-template-columns: repeat(2, 100px) !important;
+    margin-top: 0.5em;
+  }
+
+  .projects a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 25px;
+    color: white;
+    font-weight: 700;
+    margin-right: 1.7em;
+  }
+
+  .projects a:hover {
+    color: rgba(255, 255, 255, 0.677);
+
+    text-decoration: underline;
+    text-decoration-color: green;
+  }
+
+  .social-links {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: repeat(3, 200px);
+  }
+
+  .social-links a {
+    color: #808080;
+    font-family: "Raleway", sans-serif;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+}
