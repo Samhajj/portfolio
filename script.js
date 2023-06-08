@@ -8,10 +8,6 @@ const navItem4 = document.querySelector(".blog");
 const navItem5 = document.querySelector(".testimonials");
 const navItem6 = document.querySelector(".contact");
 const navItems = [navItem1, navItem2, navItem3, navItem4, navItem5, navItem6];
-const mobileMenuToggle = document.querySelector(".fa-bars");
-const mobileMenu = document.querySelector(".mobile-menu-overlay");
-const clearMenu = document.querySelector(".fa-times");
-let [a, ...others] = [...navItems];
 
 // mobile nav items
 const navItemMobile1 = document.querySelector(".home-mobile");
@@ -28,35 +24,13 @@ const mobileNavItems = [
   navItemMobile5,
   navItemMobile6,
 ];
+const mobileMenuToggle = document.querySelector(".fa-bars");
+const mobileMenu = document.querySelector(".mobile-menu-overlay");
+const clearMenu = document.querySelector(".fa-times");
 
-// let counter = 0;
-// for (let i = 0; i < navItems.length; i++) {
-//   navItems[i].addEventListener("click", function () {
-//     navItems[i].classList.add("active");
-//     navItems[i].classList.remove("active");
-//   });
-// }
+let [a, ...others] = [...navItems];
 
-let menuCounter = 0;
-mobileMenuToggle.addEventListener("click", function () {
-  if (menuCounter === 0) {
-    mobileMenu.classList.add("revealed");
-    menuCounter++;
-  } else if (menuCounter === 1) {
-    mobileMenu.classList.remove("revealed");
-    menuCounter = 0;
-  }
-});
-
-clearMenu.addEventListener("click", function () {
-  mobileMenu.classList.remove("revealed");
-});
-
-for (let i = 0; i < mobileNavItems.length; i++) {
-  mobileNavItems[i].addEventListener("click", function () {
-    mobileMenu.classList.remove("revealed");
-  });
-}
+// Desktop menu item hover effect
 
 const menuHoverFunction = function () {
   a.addEventListener("mouseenter", function () {
@@ -150,3 +124,23 @@ const menuHoverFunction = function () {
   });
 };
 menuHoverFunction();
+
+function closeMenu() {
+  mobileMenu.classList.remove("revealed");
+}
+let menuCounter = 0;
+mobileMenuToggle.addEventListener("click", function () {
+  if (menuCounter === 0) {
+    mobileMenu.classList.add("revealed");
+    menuCounter++;
+  } else if (menuCounter === 1) {
+    closeMenu();
+    menuCounter = 0;
+  }
+});
+
+clearMenu.addEventListener("click", closeMenu);
+
+for (let i = 0; i < mobileNavItems.length; i++) {
+  mobileNavItems[i].addEventListener("click", closeMenu);
+}

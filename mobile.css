@@ -54,7 +54,7 @@
   }
 
   .dynamic-side-bar-menu nav a {
-    color: white;
+    /* color: white; */
     font-family: "Poppins", sans-serif;
     font-size: 16px;
     text-decoration: none;
@@ -67,10 +67,6 @@
     background: rgb(44, 42, 42);
   }
 
-  .hover {
-    color: #808080;
-    transition: 500ms ease-in-out;
-  }
   .mobile-menu-toggle-bar {
     display: grid;
     justify-content: right;
@@ -83,12 +79,14 @@
     justify-content: center;
     row-gap: 0;
     position: absolute;
-    width: 60%;
+    width: 60% !important;
     height: 100%;
     top: 0;
     left: 0;
     background: rgb(0, 0, 0);
     padding: 0em 2em;
+    transition: transform 7000ms;
+    transform: translateX(-100%);
   }
 
   .mobile-menu-overlay nav {
@@ -145,6 +143,7 @@
     left: 0;
     background: rgb(0, 0, 0);
     padding: 0em 2em;
+    transform: translateX(0%);
   }
 
   /* Body - Menu */
@@ -160,7 +159,7 @@
     color: #909090;
     font-family: "Rubik", sans-serif;
     font-weight: 600;
-    font-size: 20px;
+    font-size: 25px;
     grid-column: 1/-1;
   }
 
@@ -174,14 +173,14 @@
 
   .job-description p {
     width: 100% !important;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 500;
   }
 
   .job-text-message {
     grid-column: 1/-1;
     width: 80%;
-    padding: 10px 15px;
+    padding: 15px 15px;
     background: rgba(29, 28, 28, 0.5);
     border-radius: 5px;
     display: grid;
@@ -190,26 +189,27 @@
     font-family: "Poppins", sans-serif;
     letter-spacing: 0px;
     line-height: 1.2;
-    margin-top: 20px;
+    margin-top: 25px;
+    box-shadow: 0 0 10px 1px rgba(182, 178, 178, 0.341);
   }
 
   .job-text-message p {
-    font-size: 15px;
+    font-size: 17px;
   }
 
   .contact-buttons {
-    margin-top: 25px;
+    margin-top: 27px;
     grid-column: 1/-1;
     display: grid;
-    grid-template-columns: repeat(2, fit-content);
-    column-gap: 15px;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0px;
   }
 
   .contact-buttons p {
     height: fit-content;
     grid-column: 1/-1;
     color: #808080;
-    font-size: 15px;
+    font-size: 17px;
     font-family: "Raleway", sans-serif;
     padding: 0;
     margin: 0;
@@ -220,7 +220,7 @@
   }
 
   .contact-buttons a {
-    width: 100%;
+    width: fit-content;
     height: fit-content;
     color: white;
     font-family: "Poppins", sans-serif;
@@ -230,7 +230,7 @@
   }
 
   .contact-buttons a:hover {
-    width: 100%;
+    width: fit-content;
     color: white;
     font-family: "Poppins", sans-serif;
     font-size: 15px;
@@ -238,10 +238,12 @@
 
   .contact-buttons .phone {
     grid-column: 1/2;
+    width: fit-content;
   }
 
   .contact-buttons .mail {
     grid-column: 2/-1;
+    width: fit-content;
   }
 
   .previous-works {
@@ -257,6 +259,7 @@
     align-items: center;
     border-radius: 5px;
     margin-bottom: 2em;
+    box-shadow: 0 0 10px 1px rgba(182, 178, 178, 0.341);
   }
 
   .previous-works p {
