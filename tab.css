@@ -1,4 +1,9 @@
 @media (max-width: 1000px) {
+  body {
+    width: 100%;
+    height: auto;
+  }
+
   #hero-section {
     width: 100%;
     height: fit-content;
@@ -215,7 +220,82 @@
     font-family: "Raleway", sans-serif;
     font-size: 15px;
   }
+
+  /* About-us styling */
+  .about-container {
+    padding: 4em 1em;
+    display: grid;
+    grid-template-columns: 55% 5% 20%;
+    column-gap: 50px;
+  }
+
+  .about-us p {
+    padding: 5px 18px;
+    border-radius: 400px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.418);
+    margin-bottom: 15px;
+  }
+
+  .about-heading-msg {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 15px;
+    word-wrap: wrap;
+  }
+
+  .about-heading-msg p {
+    font-size: 25px;
+    font-weight: 650;
+    letter-spacing: 1px;
+  }
+
+  .text {
+    font-family: "Poppins", sans-serif;
+    margin-bottom: 12px;
+    word-wrap: wrap;
+  }
+
+  .text p {
+    font-size: 17px;
+  }
+
+  .stack-header p {
+    padding: 5px 12px;
+    border-radius: 400px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.418);
+  }
+
+  .stacks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .about-image p {
+    padding-top: 0.2em;
+    font-family: "Rubik Puddles", cursive;
+    font-size: 16em;
+    font-weight: bold;
+  }
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
+  .about-container {
+    padding: 4em 1em;
+    display: grid;
+    grid-template-columns: 65% 0% 20%;
+    column-gap: 25px;
+  }
+
+  .stacks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .about-image p {
+    padding-top: 0.1em;
+    font-family: "Rubik Puddles", cursive;
+    font-size: 15em;
+    font-weight: bold;
+  }
 }

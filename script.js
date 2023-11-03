@@ -144,3 +144,26 @@ clearMenu.addEventListener("click", closeMenu);
 for (let i = 0; i < mobileNavItems.length; i++) {
   mobileNavItems[i].addEventListener("click", closeMenu);
 }
+
+// // Smooth Scrolling Animination
+// const allLinks = document.querySelectorAll("a:link");
+
+// allLinks.forEach(function (link) {
+//   link.addEventListener("click", function (e) {
+//     e.preventDefault();
+//     const href = link.getAttribute("href");
+
+//     // Scrolling to the top
+//     if (href === "#") {
+//       window.scrollTo({
+//         top: 0,
+//         behavior: "smooth",
+//       });
+//     }
+
+//     if (href !== "#" && href.startsWith("#")) {
+//       const sectionEl = document.querySelector(href);
+//       sectionEl.scrollIntoView({ behavior: "smooth" });
+//     }
+//   });
+// });
