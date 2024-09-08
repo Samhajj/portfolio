@@ -244,7 +244,7 @@ body {
 .social-links {
   grid-column: 1/-1;
   display: grid;
-  grid-template-columns: repeat(3, 200px);
+  grid-template-columns: repeat(4, 200px);
 }
 
 .social-links a {
@@ -256,9 +256,8 @@ body {
 /* ABOUT PAGE STYLING */
 /* #252729
   rgba(37,39,41,255) */
-#about {
+/* #about {
   background: radial-gradient(circle at top right, rgb(3, 3, 56), 10%, #000000);
-  /* background: conic-gradient(from 110deg, rgb(3, 3, 56), 5%, #000000); */
   color: #fff;
 }
 .about-container {
@@ -342,7 +341,6 @@ body {
 
 #work {
   background: radial-gradient(circle at center, rgb(14, 14, 136), 20%, #000000);
-  /* background: conic-gradient(from 110deg, rgb(3, 3, 56), 5%, #000000); */
   color: #fff;
   height: auto;
   padding: 3em 2.75rem;
@@ -389,4 +387,5 @@ body {
   font-weight: 600;
   display: grid;
   justify-content: center;
-}
+} */
+/* background: conic-gradient(from 110deg, rgb(3, 3, 56), 5%, #000000); */
