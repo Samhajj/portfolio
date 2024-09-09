@@ -8,10 +8,11 @@
 
   #hero-section {
     width: 100%;
-    height: 100vh !important;
+    height: auto !important;
     background: #000000;
     color: white;
     /* overflow-y: scroll !important; */
+    padding-bottom: 50px;
   }
   .container {
     padding: 1.5em 1.2em 1em;
@@ -217,15 +218,15 @@
     align-content: center;
     font-family: "Poppins", sans-serif;
     letter-spacing: 1px;
-    line-height: 1.2;
+    line-height: 1.3;
     margin-top: 30px;
     /* box-shadow: 0 0 10px 1px rgba(182, 178, 178, 0.341); */
   }
 
   .job-text-message p {
-    width: 90%;
+    width: 100%;
 
-    font-size: 17px;
+    font-size: 16px;
   }
 
   .contact-buttons {
@@ -281,8 +282,8 @@
     grid-column: 1/-1;
     margin-top: 2.5em;
     width: fit-content !important;
-    height: 70px;
-    padding: 20px 20px 50px;
+    /* height: 70px; */
+    padding: 20px 20px 50px !important;
     background: rgba(37, 39, 41, 255);
     display: grid;
     grid-template-columns: 100%;
@@ -339,7 +340,6 @@
   }
 
   .email {
-    grid-column: 1/-1;
     color: #808080;
     font-family: "Raleway", sans-serif;
     font-size: 15px;
