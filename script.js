@@ -9,6 +9,8 @@ const navItem5 = document.querySelector(".testimonials");
 const navItem6 = document.querySelector(".contact");
 const navItems = [navItem1, navItem2, navItem3, navItem4, navItem5, navItem6];
 
+// pagebody
+const homePageBody = document.querySelector("#hero-section");
 // mobile nav items
 const navItemMobile1 = document.querySelector(".home-mobile");
 const navItemMobile2 = document.querySelector(".about-mobile");

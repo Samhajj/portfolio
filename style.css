@@ -2,15 +2,16 @@
 font-family: 'Raleway', sans-serif;
 font-family: 'Rubik', sans-serif;
 font-family: 'Rubik Puddles', cursive; */
-/* rgba(67,43,91,255) */
-/* rgba(80,55,120,255) */
-/* rgba(71,64,132,255) */
-/* rgba(28,33,73,255) */
-/* box color*/
-/* rgba(20,28,49,255) */
-/* section background */
-/* rgba(9,12,19,255) */
 
+/* .me{
+color: rgb(67, 43, 91);
+color: rgb(80,55,120) ;
+color: rgb(71,64,132); 
+color: rgb(28,33,73); 
+ box color;
+ color: rgb(20,28,49);
+section background 
+/* /*color: rgb(9,12,19); */
 * {
   padding: 0;
   margin: 0;
