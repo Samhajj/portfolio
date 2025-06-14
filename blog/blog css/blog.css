@@ -1,0 +1,245 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box !important;
+}
+
+a {
+  text-decoration: none;
+  color: #0e0e0e;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+header {
+  width: 100%;
+  box-shadow: 0 0 24px #0000001f;
+  backdrop-filter: blur(10px);
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100%;
+  display: grid;
+  align-items: start !important;
+  justify-items: start !important;
+  justify-content: start;
+  align-content: start;
+}
+.header-logo a {
+  display: grid;
+  align-items: start;
+  justify-items: start;
+  justify-content: start;
+  align-content: start;
+  text-decoration: none;
+  color: #0e0e0e;
+  cursor: pointer;
+}
+
+.header-logo h1 {
+  display: grid;
+  align-items: start !important;
+  justify-items: start !important;
+  justify-content: start;
+  align-content: start;
+  font-family: "Rubik Puddles", cursive;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.container {
+  padding: 0 1.75rem !important;
+}
+
+.menu {
+  grid-column: 3/-1;
+}
+
+.hover {
+  color: rgba(0, 0, 0, 0.602);
+  transition: 700ms ease-in-out;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-content: center;
+  align-items: center;
+  list-style: none;
+  column-gap: 5px;
+}
+
+.mobile-menu-toggle-bar {
+  display: none;
+}
+
+#blog-banner {
+  height: 60vh;
+  background: linear-gradient(#00000076, #000000e4),
+    url(/image/blog/thoughts.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  align-items: center;
+  font-family: "Jost", sans-serif;
+  font-size: 46px;
+  color: #fff;
+}
+
+#blog-posts-section {
+  margin: 50px 0;
+}
+
+.blog-post-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  column-gap: 50px;
+}
+
+.blog-author-image {
+  width: 100%;
+  height: 70vh !important;
+  object-fit: contain;
+  grid-column: 1/2;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+}
+
+.blog-posts {
+  grid-column: 2/-1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 30px;
+  column-gap: 15px;
+}
+
+.blog-author-image img {
+  width: 100%;
+  height: fit-content;
+  object-fit: contain;
+  border-radius: 20px;
+  box-shadow: 0 0 12px #00000008;
+}
+
+.blog-post-card {
+  padding: 30px 25px;
+  box-shadow: 0 0 12px #00000010;
+  text-align: justify;
+  font-family: "Jost", sans-serif;
+  border-radius: 10px;
+}
+
+.blog-post-card h3 {
+  color: #8b96aa;
+  font-size: 18px;
+  line-height: 1.5em;
+}
+
+.blog-post-card p {
+  margin-top: 20px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8em;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: end;
+  }
+  .header-logo h1 {
+    font-size: 3em;
+  }
+  .menu nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle-bar {
+    display: grid;
+    grid-column: 3/-1;
+    align-items: end !important;
+    justify-items: end !important;
+    justify-content: end;
+    align-content: end;
+  }
+
+  #blog-posts-section {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+  }
+
+  .blog-banner h2 {
+    font-size: 36px;
+  }
+
+  .blog-author-image {
+    display: none;
+  }
+  .blog-post-container {
+    width: 100% !important;
+    display: grid;
+    grid-template-columns: 100% !important;
+    column-gap: 0;
+  }
+
+  .blog-posts {
+    width: 100% !important;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 100%;
+    justify-content: center;
+    justify-items: center;
+    row-gap: 30px;
+  }
+
+  .blog-post-card {
+    width: 100%;
+    padding: 15px 10px;
+    box-shadow: 0 0 12px #00000010;
+    text-align: justify;
+    font-family: "Jost", sans-serif;
+    border-radius: 10px;
+  }
+
+  .blog-post-card h3 {
+    color: #8b96aa;
+    font-size: 16px;
+    line-height: 1.5em;
+  }
+
+  .blog-post-card p {
+    margin-top: 20px;
+    color: #666;
+    font-size: 15px;
+    line-height: 1.8em;
+  }
+}
+
+.mobile-menu-overlay {
+  display: none;
+}

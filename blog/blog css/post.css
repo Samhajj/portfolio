@@ -1,0 +1,228 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box !important;
+}
+
+a {
+  text-decoration: none;
+  color: #0e0e0e;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+header {
+  width: 100%;
+  box-shadow: 0 0 24px #0000001f;
+  backdrop-filter: blur(10px);
+}
+
+.header-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+}
+
+.header-logo {
+  width: 100%;
+  display: grid;
+  align-items: start !important;
+  justify-items: start !important;
+  justify-content: start;
+  align-content: start;
+}
+.header-logo a {
+  display: grid;
+  align-items: start;
+  justify-items: start;
+  justify-content: start;
+  align-content: start;
+  text-decoration: none;
+  color: #0e0e0e;
+  cursor: pointer;
+}
+
+.header-logo h1 {
+  display: grid;
+  align-items: start !important;
+  justify-items: start !important;
+  justify-content: start;
+  align-content: start;
+  font-family: "Rubik Puddles", cursive;
+  font-size: 6em;
+  font-weight: bold;
+}
+
+.container {
+  padding: 0 1.75rem !important;
+}
+
+.menu {
+  width: 100%;
+  grid-column: 3/-1;
+}
+
+.hover {
+  color: rgba(0, 0, 0, 0.602);
+  transition: 700ms ease-in-out;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-content: center;
+  align-items: center;
+  list-style: none;
+  column-gap: 5px;
+}
+
+#post-card {
+  padding: 0 3.75em;
+  margin-top: 20px;
+}
+#post-card h3 {
+  color: #8b96aa;
+  font-size: 26px;
+  line-height: 1.5em;
+  text-align: center;
+}
+#post-card h4 {
+  color: #666;
+  font-size: 20px;
+  line-height: 1.5em;
+  margin-top: 20px;
+}
+#post-card p {
+  margin-top: 20px;
+  color: #666;
+  font-size: 16px;
+  line-height: 1.8em;
+  text-align: justify;
+}
+
+.italics {
+  display: grid;
+  /* justify-content: center;
+  justify-items: center;
+  justify-items: center; */
+  border-left: 3px solid #666;
+  padding-left: 20px;
+  margin-left: 150px;
+}
+
+ul {
+  color: #666;
+  padding-left: 12px;
+  line-height: 1.8em;
+}
+
+ol {
+  color: #666;
+  padding-left: 12px;
+  line-height: 1.8em;
+}
+
+@media (max-width: 600px) {
+  .header-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    justify-items: end;
+  }
+  .header-logo h1 {
+    font-size: 3em;
+  }
+  .menu nav {
+    display: none;
+  }
+
+  .mobile-menu-toggle-bar {
+    display: grid;
+    grid-column: 2/-1;
+    align-items: end !important;
+    justify-items: end !important;
+    justify-content: end;
+    align-content: end;
+  }
+
+  .italics {
+    display: grid;
+    border-left: 3px solid #666;
+    padding-left: 20px;
+    margin-left: 0px;
+  }
+  #post-card {
+    padding: 0 1.75em;
+    margin: 20px 0 40px 0;
+  }
+
+  #post-card h3 {
+    color: #8b96aa;
+    font-size: 23px;
+    line-height: 1.5em;
+    text-align: justify;
+  }
+  #post-card h4 {
+    color: #666;
+    font-size: 18px;
+    line-height: 1.5em;
+    margin-top: 20px;
+  }
+  #post-card p {
+    margin-top: 20px;
+    color: #666;
+    font-size: 16px;
+    line-height: 1.8em;
+    text-align: justify;
+  }
+}
+
+#buttons {
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+}
+.button {
+  display: block;
+  background: gainsboro;
+  color: goldenrod;
+  padding: 10px 15px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+}
+
+.image {
+  width: 200px;
+  height: 200px;
+  display: grid;
+  justify-content: center;
+  justify-items: center;
+  margin-bottom: 20px;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.mobile-menu-overlay {
+  display: none;
+}
+
+.mobile-menu-toggle-bar {
+  display: none;
+}
